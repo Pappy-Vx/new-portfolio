@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom font faces for Aeonik */
+@font-face {
+  font-family: 'Aeonik';
+  src: url('https://ext.same-assets.com/4101750110/1353357299.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aeonik';
+  src: url('https://ext.same-assets.com/4101750110/729811578.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --background: 220 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 220 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 220 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 220 9% 9%;
+    --secondary: 220 9% 9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 220 9% 9%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 220 9% 9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 13% 13%;
+    --input: 220 13% 13%;
+    --ring: 212 12% 15%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    background: #191919;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+/* Custom utility classes */
+.font-aeonik {
+  font-family: 'Aeonik', sans-serif;
+}
+
+.hero-text {
+  font-family: 'Aeonik', sans-serif;
+  font-weight: 500;
+  line-height: 0.85;
+  letter-spacing: -0.02em;
+}
+
+.experience-text {
+  font-family: 'Aeonik', sans-serif;
+  font-weight: 500;
+  line-height: 0.85;
+  letter-spacing: -0.02em;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes float-delayed {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float-delayed 6s ease-in-out infinite 1s;
+}
+
+/* Custom gradient backgrounds for badges */
+.badge-copywriter {
+  background: linear-gradient(135deg, #7dd3fc 0%, #3b82f6 100%);
+}
+
+.badge-content-strategist {
+  background: linear-gradient(135deg, #c084fc 0%, #8b5cf6 100%);
+}
+
+.badge-writer-editor {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+}
+
+.badge-product-marketer {
+  background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+}
+
+.badge-director {
+  background: linear-gradient(135deg, #fb7185 0%, #e11d48 100%);
+}
+
+.badge-producer {
+  background: linear-gradient(135deg, #a78bfa 0%, #7c3aed 100%);
+}
+
+.badge-email-marketer {
+  background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+}
+
+.badge-seo-specialist {
+  background: linear-gradient(135deg, #f87171 0%, #ef4444 100%);
+}
+
+.badge-storyteller {
+  background: linear-gradient(135deg, #34d399 0%, #059669 100%);
+}
